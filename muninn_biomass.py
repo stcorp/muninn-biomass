@@ -216,7 +216,6 @@ class BiomassBaseProduct(object):
 
     @staticmethod
     def archive_path(attributes):
-        # TODO is this the right abstraction level?
         return os.path.join(
             attributes.core.product_type,
             attributes.core.validity_start.strftime("%Y"),
