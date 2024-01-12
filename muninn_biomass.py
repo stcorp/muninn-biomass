@@ -5,6 +5,7 @@ from datetime import datetime
 import xml.etree.ElementTree as ET
 from typing import Optional, Callable
 
+from muninn.geometry import Point, LinearRing, Polygon, MultiPolygon
 from muninn.schema import Mapping, Text, Integer, Boolean, Timestamp
 from muninn.util import copy_path
 from muninn import Struct
@@ -442,6 +443,21 @@ class BiomassBaseProduct(object):
         self._set_property(core, "validity_stop", root, pathValidityPeriod + "gml:endPosition", ns,
                            lambda x: datetime.max if x == "9999-99-99T99:99:99.999Z" else
                            datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ"), True)
+
+        footprint = root.find("./om:featureOfInterest/eop:Footprint", namespaces=ns)
+        if footprint is not None:
+            polygons = footprint.findall("./eop:multiExtentOf/gml:MultiSurface/gml:surfaceMember/gml:Polygon",
+                                         namespaces=ns)
+            geometries = []
+            for polygon in polygons:
+                coord = polygon.find("./gml:exterior/gml:LinearRing/gml:posList", namespaces=ns).text.split(" ")
+                geometry = Polygon([LinearRing([Point(float(lon), float(lat)) for lat, lon in
+                                    zip(coord[0::2], coord[1::2])])])
+                geometries.append(geometry)
+            if len(geometries) == 1:
+                core.footprint = geometries[0]
+            elif len(geometries) > 1:
+                core.footprint = MultiPolygon(geometries)
 
     def _analyze_eof_header(self, root, properties):
         core = properties.core
