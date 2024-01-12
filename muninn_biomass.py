@@ -52,106 +52,106 @@ def namespace(namespace_name):
 # Product types
 
 L0_PRODUCT_TYPES = [
-    'S1_RAW__0S',
-    'S2_RAW__0S',
-    'S3_RAW__0S',
-    'S1_RAW__0M',
-    'S2_RAW__0M',
-    'S3_RAW__0M',
-    'RO_RAW__0S',
-    'EC_RAW__0S',
-    'AC_RAW__0A',
+    "S1_RAW__0S",
+    "S2_RAW__0S",
+    "S3_RAW__0S",
+    "S1_RAW__0M",
+    "S2_RAW__0M",
+    "S3_RAW__0M",
+    "RO_RAW__0S",
+    "EC_RAW__0S",
+    "AC_RAW__0A",
 ]
 L1_PRODUCT_TYPES = [
-    'S1_SCS__1S',
-    'S2_SCS__1S',
-    'S3_SCS__1S',
-    'S1_DGM__1S',
-    'S2_DGM__1S',
-    'S3_DGM__1S',
-    'S1_SCS__1M',
-    'S2_SCS__1M',
-    'S3_SCS__1M',
-    'S1_STA__1S',
-    'S2_STA__1S',
-    'S3_STA__1S',
-    'S1_STA__1M',
-    'S2_STA__1M',
-    'S3_STA__1M',
-    'RO_SCS__1S'
+    "S1_SCS__1S",
+    "S2_SCS__1S",
+    "S3_SCS__1S",
+    "S1_DGM__1S",
+    "S2_DGM__1S",
+    "S3_DGM__1S",
+    "S1_SCS__1M",
+    "S2_SCS__1M",
+    "S3_SCS__1M",
+    "S1_STA__1S",
+    "S2_STA__1S",
+    "S3_STA__1S",
+    "S1_STA__1M",
+    "S2_STA__1M",
+    "S3_STA__1M",
+    "RO_SCS__1S",
 ]
 L2A_PRODUCT_TYPES = [
-    'FP_GN__L2A',
-    'FP_FD__L2A',
-    'FP_FH__L2A',
+    "FP_GN__L2A",
+    "FP_FD__L2A",
+    "FP_FH__L2A",
 ]
 L2B_L3_PRODUCT_TYPES = [
-    'FP_FD__L2B',
-    'FP_FH__L2B',
-    'FP_AGB_L2B',
-    'FP_FD__L3T',
-    'FP_FH__L3T',
-    'FP_AGB_L3T',
+    "FP_FD__L2B",
+    "FP_FH__L2B",
+    "FP_AGB_L2B",
+    "FP_FD__L3T",
+    "FP_FH__L3T",
+    "FP_AGB_L3T",
 ]
 ADF_PRODUCT_TYPES = [
-    'AUX_ORB___',
-    'AUX_ATT___',
-    'AUX_INS___',
-    'AUX_PP0___',
-    'AUX_PP1___',
-    'AUX_PPS___',
-    'AUX_PP2_2A',
-    'AUX_PP2_FH',
-    'AUX_PP2_FD',
-    'AUX_PP2_AB',
-    'AUX_PP3___',
-    'AUX_TEC___',
-    'AUX_GMF___',
+    "AUX_ORB___",
+    "AUX_ATT___",
+    "AUX_INS___",
+    "AUX_PP0___",
+    "AUX_PP1___",
+    "AUX_PPS___",
+    "AUX_PP2_2A",
+    "AUX_PP2_FH",
+    "AUX_PP2_FD",
+    "AUX_PP2_AB",
+    "AUX_PP3___",
+    "AUX_TEC___",
+    "AUX_GMF___",
 ]
 BASELINE_CFG_PRODUCT_TYPES = [
-    'CFG_PF_BC_'
+    "CFG_PF_BC_",
 ]
 REPORT_PRODUCT_TYPES = [
-    'REP_NOB_IN',
-    'REP_NOBOUT',
-    'REP_PROD__',
+    "REP_NOB_IN",
+    "REP_NOBOUT",
+    "REP_PROD__",
 ]
 QUALITY_DISCLAIMER_PRODUCT_TYPES = [
-    'REP_DISCLM',
+    "REP_DISCLM",
 ]
 TRANSPONDER_EOF_FILE_TYPES = [
-    'CFG_TRPCCF',
-    'REP_TRPCRF',
-    'REP_TRPSCR',
-    'LOG_TRPSLF',
-    'LOG_TRPDLF',
+    "CFG_TRPCCF",
+    "REP_TRPCRF",
+    "REP_TRPSCR",
+    "LOG_TRPSLF",
+    "LOG_TRPDLF",
 ]
 TRANSPONDER_REPORT_TYPES = [
-    'REP_TRPACQ',
-    'REP_TRPICR',
-    'REP_TRPCAL',
+    "REP_TRPACQ",
+    "REP_TRPICR",
+    "REP_TRPCAL",
 ]
 MISSION_PLANNING_EOF_TYPES = [
-    'MPL_TRPINP',
-    'MPL_XBSPLN',
+    "MPL_TRPINP",
+    "MPL_XBSPLN",
 ]
 MISSION_PLANNING_EOF_WITH_BASELINE_TYPES = [
-    'MPL_PPF_1_',
-    'MPL_PPF_2_',
-    'MPL_PPF_3_',
-    'MPL_PPF_4_',
-    'MPL_PPF_5_',
-    'MPL_PPF_6_',
-    'MPL_PPF_7_',
-    'MPL_PPF_8_',
-    'MPL_ORBREF',
-    'MPL_ORBPRE',
+    "MPL_PPF_1_",
+    "MPL_PPF_2_",
+    "MPL_PPF_3_",
+    "MPL_PPF_4_",
+    "MPL_PPF_5_",
+    "MPL_PPF_6_",
+    "MPL_PPF_7_",
+    "MPL_PPF_8_",
+    "MPL_ORBREF",
+    "MPL_ORBPRE",
 ]
 MISSION_PLANNING_EOF_WITH_ACQ_TYPES = [
-    'MPL_XBSACQ',
+    "MPL_XBSACQ",
 ]
 MISSION_PLANNING_EOF_WITH_PHASE_TYPES = [
-    'MPL_MISSTL',
+    "MPL_MISSTL",
 ]
 
 
@@ -186,7 +186,7 @@ def parse_boolean(val):
 
 class BiomassBaseProduct(object):
     # filename_base_pattern is the pattern for the filename excluding any extension (and without trailing $)
-    # extension can be '' (for a directory), None (for multifile products), or set to a specific extension (e.g. '.EOF')
+    # extension can be "" (for a directory), None (for multifile products), or set to a specific extension (e.g. ".EOF")
     def __init__(self, product_type: str, filename_base_pattern: str = None, extension: str = None,
                  zipped: Optional[bool] = None):
         self.is_multi_file_product = False
@@ -194,17 +194,17 @@ class BiomassBaseProduct(object):
         self.extension = extension
         self.filename_pattern = filename_base_pattern
         if zipped is None:  # "None" means flexible zip handling
-            if extension == '':
-                self.filename_pattern += r'(\.ZIP)?$'
+            if extension == "":
+                self.filename_pattern += r"(\.ZIP)?$"
             elif extension is None:
-                self.filename_pattern += r'(\.ZIP$)?'
+                self.filename_pattern += r"(\.ZIP$)?"
             else:
-                self.filename_pattern += r'(%s|\.ZIP)$' % re.escape(extension)
+                self.filename_pattern += r"(%s|\.ZIP)$" % re.escape(extension)
         elif zipped:
-            self.filename_pattern += r'\.ZIP$'
+            self.filename_pattern += r"\.ZIP$"
         else:
             if self.extension is not None:
-                self.filename_pattern += r'%s$' % re.escape(extension)
+                self.filename_pattern += r"%s$" % re.escape(extension)
 
     @property
     def use_enclosing_directory(self):
@@ -224,7 +224,7 @@ class BiomassBaseProduct(object):
         )
 
     def is_zipped(self, filepath):
-        return filepath.endswith('.ZIP')
+        return filepath.endswith(".ZIP")
 
     def parse_filename(self, filename):
         match = re.match(self.filename_pattern, os.path.basename(filename))
@@ -254,11 +254,11 @@ class BiomassBaseProduct(object):
 
     def _set_properties_from_filename(self, file_name_attrs, properties):
         core = properties.core
-        core.validity_start = datetime.strptime(file_name_attrs['validity_start'], '%Y%m%dT%H%M%S')
-        if file_name_attrs['validity_stop'] == '99999999T999999':
+        core.validity_start = datetime.strptime(file_name_attrs["validity_start"], "%Y%m%dT%H%M%S")
+        if file_name_attrs["validity_stop"] == "99999999T999999":
             core.validity_stop = datetime.max
         else:
-            core.validity_stop = datetime.strptime(file_name_attrs['validity_stop'], '%Y%m%dT%H%M%S')
+            core.validity_stop = datetime.strptime(file_name_attrs["validity_stop"], "%Y%m%dT%H%M%S")
 
     def read_xml_component(self, filepath, component_path=None):
         # filepath: Path given as input to the analyze() function
@@ -300,36 +300,27 @@ class BiomassBaseProduct(object):
             mandatory (bool): Flag that controls if an error should be thrown if this property cannot be extracted:
                                 False -> No error. Defaults to False.
         """
-        if not hasattr(properties, property_name):
-            property_iter = root.iterfind(path, namespaces=ns)
-            list_values = []
-            for tmp in property_iter:
-                if tmp is not None:
-                    list_values.append(tmp.text)
+        property_iter = root.iterfind(path, namespaces=ns)
+        list_values = []
+        for tmp in property_iter:
+            if tmp is not None:
+                list_values.append(tmp.text)
 
-            property_value = " ".join(list_values)
-            if property_value != "":
-                try:
-                    value = parse(property_value)
-                    if value is not None:
-                        # Value is only None if the metadata was signified as not available (e.g. "NA" or "___").
-                        # In that case, the metadata is ignored. If not, it is stored into properties.
-                        properties[property_name] = value
-                except ValueError as e:
-                    if mandatory:
-                        raise muninnError(f"Impossible to extract mandatory metadata: {property_name} "
-                                          f"(ValueError: {e})")
-                    else:
-                        pass
-                except IndexError:
-                    if mandatory:
-                        raise muninnError(f"Impossible to extract mandatory metadata: {property_name} "
-                                          f"(Incorrect value: {property_value})")
-                    else:
-                        pass
+        property_value = " ".join(list_values)
+        if property_value != "":
+            try:
+                value = parse(property_value)
+                if value is not None:
+                    # Value is only None if the metadata was signified as not available (e.g. "NA" or "___").
+                    # In that case, the metadata is ignored. If not, it is stored into properties.
+                    properties[property_name] = value
+            except ValueError as e:
+                raise muninnError(f"could not extract metadata {property_name} ({e})")
+            except IndexError:
+                raise muninnError(f"could not extract metadata {property_name} (incorrect value: {property_value})")
 
-            elif mandatory:
-                raise muninnError(f"Impossible to extract mandatory metadata: {property_name} (Metadata missing)")
+        elif mandatory and not hasattr(properties, property_name):
+            raise muninnError(f"could not extract mandatory metadata {property_name} (metadata missing)")
 
     def _analyze_mph(self, root, properties):
         ns = {
@@ -373,57 +364,57 @@ class BiomassBaseProduct(object):
 
         pathSensor = "./om:procedure/eop:EarthObservationEquipment/eop:sensor/eop:Sensor/"
         property_name = "swath"
-        self._set_property(biomass, property_name, root, pathSensor+"eop:swathIdentifier", ns, str,
+        self._set_property(biomass, property_name, root, pathSensor + "eop:swathIdentifier", ns, str,
                            mandatory[property_name])
 
         pathAcquisition = "./om:procedure/eop:EarthObservationEquipment/eop:acquisitionParameters/bio:Acquisition/"
         property_name = "orbit_number"
-        self._set_property(biomass, property_name, root, pathAcquisition+"eop:orbitNumber", ns, int,
+        self._set_property(biomass, property_name, root, pathAcquisition + "eop:orbitNumber", ns, int,
                            mandatory[property_name])
         property_name = "orbit_drift_flag"
-        self._set_property(biomass, property_name, root, pathAcquisition+"bio:orbitDriftFlag", ns, parse_boolean,
+        self._set_property(biomass, property_name, root, pathAcquisition + "bio:orbitDriftFlag", ns, parse_boolean,
                            mandatory[property_name])
         property_name = "orbit_direction"
-        self._set_property(biomass, property_name, root, pathAcquisition+"eop:orbitDirection", ns, str,
+        self._set_property(biomass, property_name, root, pathAcquisition + "eop:orbitDirection", ns, str,
                            mandatory[property_name])
         property_name = "datatake_id"
-        self._set_property(biomass, property_name, root, pathAcquisition+"bio:dataTakeID", ns, str,
+        self._set_property(biomass, property_name, root, pathAcquisition + "bio:dataTakeID", ns, str,
                            mandatory[property_name])
         property_name = "instrument_conf_id"
-        self._set_property(biomass, property_name, root, pathAcquisition+"bio:instrumentConfID", ns, int,
+        self._set_property(biomass, property_name, root, pathAcquisition + "bio:instrumentConfID", ns, int,
                            mandatory[property_name])
         property_name = "track_number"
-        self._set_property(biomass, property_name, root, pathAcquisition+"eop:wrsLongitudeGrid", ns, int,
+        self._set_property(biomass, property_name, root, pathAcquisition + "eop:wrsLongitudeGrid", ns, int,
                            mandatory[property_name])
         if self.product_type in L0_PRODUCT_TYPES:
             # For L0 product, this contains the slice number
             property_name = "slice_number"
-            self._set_property(biomass, property_name, root, pathAcquisition+"eop:wrsLatitudeGrid", ns,
+            self._set_property(biomass, property_name, root, pathAcquisition + "eop:wrsLatitudeGrid", ns,
                                lambda x: None if "_" in x else int(x),
                                mandatory[property_name])  # Not available value ("___") is ignored
         elif self.product_type in L1_PRODUCT_TYPES+L2A_PRODUCT_TYPES:
             # For L1 and L2A, this contains the frame number
             property_name = "frame_number"
-            self._set_property(biomass, property_name, root, pathAcquisition+"eop:wrsLatitudeGrid", ns, int,
+            self._set_property(biomass, property_name, root, pathAcquisition + "eop:wrsLatitudeGrid", ns, int,
                                mandatory[property_name])
         property_name = "mission_phase"
-        self._set_property(biomass, property_name, root, pathAcquisition+"bio:missionPhase", ns, lambda x: x[0],
+        self._set_property(biomass, property_name, root, pathAcquisition + "bio:missionPhase", ns, lambda x: x[0],
                            mandatory[property_name])  # Only the first letter is taken
         property_name = "global_coverage"
-        self._set_property(biomass, property_name, root, pathAcquisition+"bio:globalCoverageID", ns,
+        self._set_property(biomass, property_name, root, pathAcquisition + "bio:globalCoverageID", ns,
                            lambda x: None if x == "NA" else int(x), mandatory[property_name])  # NA is ignored
         property_name = "major_cycle"
-        self._set_property(biomass, property_name, root, pathAcquisition+"bio:majorCycleID", ns,
+        self._set_property(biomass, property_name, root, pathAcquisition + "bio:majorCycleID", ns,
                            lambda x: None if x == "NA" else int(x), mandatory[property_name])  # NA is ignored
         property_name = "repeat_cycle"
-        self._set_property(biomass, property_name, root, pathAcquisition+"bio:repeatCycleID", ns,
+        self._set_property(biomass, property_name, root, pathAcquisition + "bio:repeatCycleID", ns,
                            lambda x: 0 if x == "DR" else (None if x == "NA" else int(x)),
                            mandatory[property_name])  # Drift is represented by a 0 value. NA is ignored
         property_name = "tile"
-        self._set_property(biomass, property_name, root, pathAcquisition+"bio:tileID", ns, str,
+        self._set_property(biomass, property_name, root, pathAcquisition + "bio:tileID", ns, str,
                            mandatory[property_name])
         property_name = "basin"
-        self._set_property(biomass, property_name, root, pathAcquisition+"bio:basinID", ns, str,
+        self._set_property(biomass, property_name, root, pathAcquisition + "bio:basinID", ns, str,
                            mandatory[property_name])
 
         pathProcInfo = "./eop:metaDataProperty/bio:EarthObservationMetaData/eop:processing/bio:ProcessingInformation/"
@@ -433,24 +424,24 @@ class BiomassBaseProduct(object):
         self._set_property(biomass, "processor_name", root, pathProcInfo + "eop:processorName", ns, str, True)
         self._set_property(biomass, "processor_version", root, pathProcInfo + "eop:processorVersion", ns, str, True)
         self._set_property(core, "creation_date", root, pathProcInfo + "eop:processingDate", ns,
-                           lambda x: datetime.strptime(x, '%Y-%m-%dT%H:%M:%SZ'), True)
+                           lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ"), True)
 
         pathDownlinkInfo = "./eop:metaDataProperty/bio:EarthObservationMetaData/eop:downlinkedTo/" \
             "eop:DownlinkInformation/"
         property_name = "acquisition_station"
-        self._set_property(biomass, property_name, root, pathDownlinkInfo+"eop:acquisitionStation", ns, str,
+        self._set_property(biomass, property_name, root, pathDownlinkInfo + "eop:acquisitionStation", ns, str,
                            mandatory[property_name])
         property_name = "acquisition_date"
-        self._set_property(biomass, property_name, root, pathDownlinkInfo+"eop:acquisitionDate", ns,
-                           lambda x: datetime.strptime(x, '%Y-%m-%dT%H:%M:%SZ'), mandatory[property_name])
+        self._set_property(biomass, property_name, root, pathDownlinkInfo + "eop:acquisitionDate", ns,
+                           lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ"), mandatory[property_name])
 
-        # Also extracts validity_start and validity_stop if not already extracted from the filename
+        # Extract more accurate versions of validity_start and validity_stop
         pathValidityPeriod = "./om:validTime/gml:TimePeriod/"
-        self._set_property(core, "validity_start", root, pathValidityPeriod+"gml:beginPosition", ns,
-                           lambda x: datetime.strptime(x[:-5], '%Y-%m-%dT%H:%M:%S'), True)
-        self._set_property(core, "validity_stop", root, pathValidityPeriod+"gml:endPosition", ns,
-                           lambda x: datetime.max if x[:-5] == '9999-99-99T99:99:99' else
-                           datetime.strptime(x[:-5], '%Y-%m-%dT%H:%M:%S'), True)
+        self._set_property(core, "validity_start", root, pathValidityPeriod + "gml:beginPosition", ns,
+                           lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ"), True)
+        self._set_property(core, "validity_stop", root, pathValidityPeriod + "gml:endPosition", ns,
+                           lambda x: datetime.max if x == "9999-99-99T99:99:99.999Z" else
+                           datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ"), True)
 
     def _analyze_eof_header(self, root, properties):
         core = properties.core
@@ -480,19 +471,19 @@ class BiomassBaseProduct(object):
 
         # Extract appropriate metadata
         pathSource = start_node_path+"Fixed_Header/Source/"
-        self._set_property(biomass, "processing_center", root, pathSource+"System", ns, str, True)
-        self._set_property(biomass, "processor_name", root, pathSource+"Creator", ns, str, True)
-        self._set_property(biomass, "processor_version", root, pathSource+"Creator_Version", ns, str, True)
-        self._set_property(core, "creation_date", root, pathSource+"Creation_Date", ns,
-                           lambda x: datetime.strptime(x, 'UTC=%Y-%m-%dT%H:%M:%S'), True)
+        self._set_property(biomass, "processing_center", root, pathSource + "System", ns, str, True)
+        self._set_property(biomass, "processor_name", root, pathSource + "Creator", ns, str, True)
+        self._set_property(biomass, "processor_version", root, pathSource + "Creator_Version", ns, str, True)
+        self._set_property(core, "creation_date", root, pathSource + "Creation_Date", ns,
+                           lambda x: datetime.strptime(x, "UTC=%Y-%m-%dT%H:%M:%S"), True)
 
         # Also extract validity_start and validity_stop if not already extracted from the filename
         pathValidityPeriod = start_node_path+"Fixed_Header/Validity_Period/"
-        self._set_property(core, "validity_start", root, pathValidityPeriod+"Validity_Start", ns,
-                           lambda x: datetime.strptime(x, 'UTC=%Y-%m-%dT%H:%M:%S'), True)
-        self._set_property(core, "validity_stop", root, pathValidityPeriod+"Validity_Stop", ns,
-                           lambda x: datetime.max if x == 'UTC=9999-99-99T99:99:99' else
-                           datetime.strptime(x, 'UTC=%Y-%m-%dT%H:%M:%S'), True)
+        self._set_property(core, "validity_start", root, pathValidityPeriod + "Validity_Start", ns,
+                           lambda x: datetime.strptime(x, "UTC=%Y-%m-%dT%H:%M:%S"), True)
+        self._set_property(core, "validity_stop", root, pathValidityPeriod + "Validity_Stop", ns,
+                           lambda x: datetime.max if x == "UTC=9999-99-99T99:99:99" else
+                           datetime.strptime(x, "UTC=%Y-%m-%dT%H:%M:%S"), True)
 
     def export_zip(self, archive, properties, target_path, paths):
         if self.is_zipped(paths[0]):
@@ -502,7 +493,7 @@ class BiomassBaseProduct(object):
         target_filepath = os.path.join(os.path.abspath(target_path), properties.core.physical_name)
         if self.extension:
             target_filepath = target_filepath[:-len(self.extension)]
-        target_filepath += '.ZIP'
+        target_filepath += ".ZIP"
         compress(paths, target_filepath, compresslevel=1)
         return target_filepath
 
@@ -510,20 +501,20 @@ class BiomassBaseProduct(object):
 class FrameBasedDataProduct(BiomassBaseProduct):
     def __init__(self, product_type, zipped=None):
         pattern = [
-            r'^BIO',
+            r"^BIO",
             product_type,
-            r'(?P<validity_start>\d{8}T\d{6})',
-            r'(?P<validity_stop>\d{8}T\d{6})',
-            r'(?P<mission_phase>[CIT])',
-            r'G(?P<global_coverage>[_\d]{2})',
-            r'M(?P<major_cycle>[_\d]{2})',
-            r'C(?P<repeat_cycle>([_\d]{2}|DR))',
-            r'T(?P<track_number>[_\d]{3})',
-            r'F(?P<frame_number>[_\d]{3})',
-            r'(?P<baseline>\d{2})',
-            r'(?P<compact_creation_date>\w{6})',
+            r"(?P<validity_start>\d{8}T\d{6})",
+            r"(?P<validity_stop>\d{8}T\d{6})",
+            r"(?P<mission_phase>[CIT])",
+            r"G(?P<global_coverage>[_\d]{2})",
+            r"M(?P<major_cycle>[_\d]{2})",
+            r"C(?P<repeat_cycle>([_\d]{2}|DR))",
+            r"T(?P<track_number>[_\d]{3})",
+            r"F(?P<frame_number>[_\d]{3})",
+            r"(?P<baseline>\d{2})",
+            r"(?P<compact_creation_date>\w{6})",
         ]
-        super().__init__(product_type, filename_base_pattern=r'_'.join(pattern), extension='', zipped=zipped)
+        super().__init__(product_type, filename_base_pattern=r"_".join(pattern), extension="", zipped=zipped)
 
     def _set_properties_from_filename(self, file_name_attrs, properties):
         super()._set_properties_from_filename(file_name_attrs, properties)
@@ -531,23 +522,23 @@ class FrameBasedDataProduct(BiomassBaseProduct):
         biomass = properties.biomass
 
         swath = self.product_type.split("_")[0]
-        if swath != 'FP':  # for L2A we can only derive the swath from the MPH
+        if swath != "FP":  # for L2A we can only derive the swath from the MPH
             biomass.swath = swath
         biomass.type = self.product_type.split("_")[1]
-        biomass.mission_phase = file_name_attrs['mission_phase']
-        biomass.global_coverage = int(file_name_attrs['global_coverage'])
-        biomass.major_cycle = int(file_name_attrs['major_cycle'])
-        if 'repeat_cycle' in file_name_attrs and file_name_attrs['repeat_cycle'] != "__":
-            if file_name_attrs['repeat_cycle'] == "DR":
+        biomass.mission_phase = file_name_attrs["mission_phase"]
+        biomass.global_coverage = int(file_name_attrs["global_coverage"])
+        biomass.major_cycle = int(file_name_attrs["major_cycle"])
+        if "repeat_cycle" in file_name_attrs and file_name_attrs["repeat_cycle"] != "__":
+            if file_name_attrs["repeat_cycle"] == "DR":
                 biomass.repeat_cycle = 0
             else:
-                biomass.repeat_cycle = int(file_name_attrs['repeat_cycle'])
-        if 'track_number' in file_name_attrs and file_name_attrs['track_number'] != "___":
-            biomass.track_number = int(file_name_attrs['track_number'])
-        if 'frame_number' in file_name_attrs and file_name_attrs['frame_number'] != "___":
-            biomass.frame_number = int(file_name_attrs['frame_number'])
-        biomass.baseline = int(file_name_attrs['baseline'])
-        biomass.compact_creation_date = file_name_attrs['compact_creation_date']
+                biomass.repeat_cycle = int(file_name_attrs["repeat_cycle"])
+        if "track_number" in file_name_attrs and file_name_attrs["track_number"] != "___":
+            biomass.track_number = int(file_name_attrs["track_number"])
+        if "frame_number" in file_name_attrs and file_name_attrs["frame_number"] != "___":
+            biomass.frame_number = int(file_name_attrs["frame_number"])
+        biomass.baseline = int(file_name_attrs["baseline"])
+        biomass.compact_creation_date = file_name_attrs["compact_creation_date"]
 
     def analyze(self, paths, filename_only=False):
         # Get general BIOMASS product info
@@ -565,39 +556,36 @@ class FrameBasedDataProduct(BiomassBaseProduct):
 class TileBasedDataProduct(BiomassBaseProduct):
     def __init__(self, product_type, zipped=None):
         pattern = [
-            r'^BIO',
+            r"^BIO",
             product_type,
-            r'(?P<mission_phase>[CIT])',
-            r'G(?P<global_coverage>[_\d]{2})',
-            r'T(?P<tile_number>[NS]\d{2}[EW]\d{3})',
-            r'B(?P<basin_literal>[\w]{3})',
-            r'(?P<baseline>\d{2})',
-            r'(?P<compact_creation_date>\w{6})',
+            r"(?P<mission_phase>[CIT])",
+            r"G(?P<global_coverage>[_\d]{2})",
+            r"T(?P<tile_number>[NS]\d{2}[EW]\d{3})",
+            r"B(?P<basin_literal>[\w]{3})",
+            r"(?P<baseline>\d{2})",
+            r"(?P<compact_creation_date>\w{6})",
         ]
-        super().__init__(product_type, filename_base_pattern=r'_'.join(pattern), extension='', zipped=zipped)
+        super().__init__(product_type, filename_base_pattern=r"_".join(pattern), extension="", zipped=zipped)
 
     def _set_properties_from_filename(self, file_name_attrs, properties):
         # Validity start and stop cannot be recovered from filename
 
         biomass = properties.biomass
         biomass.type = self.product_type.split("_")[1]
-        biomass.baseline = int(file_name_attrs['baseline'])
-        biomass.mission_phase = file_name_attrs['mission_phase']
-        biomass.global_coverage = int(file_name_attrs['global_coverage'])
-        biomass.compact_creation_date = file_name_attrs['compact_creation_date']
-        biomass.tile = file_name_attrs['tile_number']
-        biomass.basin = file_name_attrs['basin_literal']
+        biomass.baseline = int(file_name_attrs["baseline"])
+        biomass.mission_phase = file_name_attrs["mission_phase"]
+        biomass.global_coverage = int(file_name_attrs["global_coverage"])
+        biomass.compact_creation_date = file_name_attrs["compact_creation_date"]
+        biomass.tile = file_name_attrs["tile_number"]
+        biomass.basin = file_name_attrs["basin_literal"]
 
     def analyze(self, paths, filename_only=False):
-        if filename_only:
-            raise NotImplementedError(f'Filename-only parsing is not possible for product type {self.product_type}')
-
         properties = super().analyze(paths, filename_only)
 
         if not filename_only:
             # Use Main Product Header to get missing info
             file_path = paths[0]
-            component_path = os.path.splitext(os.path.basename(file_path))[0].lower()+".xml"
+            component_path = os.path.splitext(os.path.basename(file_path))[0].lower() + ".xml"
             self._analyze_mph(self.read_xml_component(file_path, component_path), properties)
 
         return properties
@@ -606,14 +594,14 @@ class TileBasedDataProduct(BiomassBaseProduct):
 class AuxiliaryDataFile(BiomassBaseProduct):
     def __init__(self, product_type, zipped=None):
         pattern = [
-            r'^BIO',
+            r"^BIO",
             product_type,
-            r'(?P<validity_start>\d{8}T\d{6})',
-            r'(?P<validity_stop>\d{8}T\d{6})',
-            r'(?P<baseline>\d{2})',
-            r'(?P<compact_creation_date>\w{6})',
+            r"(?P<validity_start>\d{8}T\d{6})",
+            r"(?P<validity_stop>\d{8}T\d{6})",
+            r"(?P<baseline>\d{2})",
+            r"(?P<compact_creation_date>\w{6})",
         ]
-        super().__init__(product_type, filename_base_pattern=r'_'.join(pattern), extension='', zipped=zipped)
+        super().__init__(product_type, filename_base_pattern=r"_".join(pattern), extension="", zipped=zipped)
 
     def _set_properties_from_filename(self, file_name_attrs, properties):
         super()._set_properties_from_filename(file_name_attrs, properties)
@@ -621,8 +609,8 @@ class AuxiliaryDataFile(BiomassBaseProduct):
         biomass = properties.biomass
 
         biomass.type = self.product_type.split("_")[1]
-        biomass.baseline = int(file_name_attrs['baseline'])
-        biomass.compact_creation_date = file_name_attrs['compact_creation_date']
+        biomass.baseline = int(file_name_attrs["baseline"])
+        biomass.compact_creation_date = file_name_attrs["compact_creation_date"]
 
     def analyze(self, paths, filename_only=False):
         properties = super().analyze(paths, filename_only)
@@ -630,7 +618,7 @@ class AuxiliaryDataFile(BiomassBaseProduct):
         if not filename_only:
             # Use Main Product Header to get missing info
             file_path = paths[0]
-            component_path = os.path.splitext(os.path.basename(file_path))[0].lower()+".xml"
+            component_path = os.path.splitext(os.path.basename(file_path))[0].lower() + ".xml"
             self._analyze_mph(self.read_xml_component(file_path, component_path), properties)
 
         return properties
@@ -639,97 +627,85 @@ class AuxiliaryDataFile(BiomassBaseProduct):
 class BaselineConfigurationFile(BiomassBaseProduct):
     def __init__(self, product_type, zipped=None):
         pattern = [
-            r'^BIO',
-            r'(?P<file_class>\w{4})',
+            r"^BIO",
+            r"(?P<file_class>\w{4})",
             product_type,
-            r'(?P<creation_date>\d{8}T\d{6})Z',
-            r'(?P<facility>\w{6})',
-            r'(?P<version>\d{4})',
+            r"(?P<creation_date>\d{8}T\d{6})Z",
+            r"(?P<facility>\w{6})",
+            r"(?P<version>\d{4})",
         ]
-        super().__init__(product_type, filename_base_pattern=r'_'.join(pattern), extension='.xml', zipped=zipped)
+        super().__init__(product_type, filename_base_pattern=r"_".join(pattern), extension=".xml", zipped=zipped)
 
     def analyze(self, paths, filename_only=False):
-        if filename_only:
-            raise NotImplementedError(f'Filename-only parsing is not possible for product type {self.product_type}')
         properties = super().analyze(paths, filename_only=filename_only)
-
         if not filename_only:
             self._analyze_eof_header(self.read_xml_component(paths[0]), properties)
-
         return properties
 
     def _set_properties_from_filename(self, file_name_attrs, properties):
-        properties.core.creation_date = datetime.strptime(file_name_attrs['creation_date'], '%Y%m%dT%H%M%S')
-        properties.biomass.processing_center = file_name_attrs['facility'].rstrip('_')
+        properties.core.creation_date = datetime.strptime(file_name_attrs["creation_date"], "%Y%m%dT%H%M%S")
+        properties.biomass.processing_center = file_name_attrs["facility"].rstrip("_")
 
 
 class Report(BiomassBaseProduct):
     def __init__(self, product_type, zipped=None):
         pattern = [
-            r'^BIO',
-            r'(?P<file_class>\w{4})',
+            r"^BIO",
+            r"(?P<file_class>\w{4})",
             product_type,
-            r'(?P<validity_start>\d{8}T\d{6})',
-            r'(?P<validity_stop>\d{8}T\d{6})',
-            r'(?P<originator>\w{8})',
-            r'(?P<baseline>\d{2})(?P<version>\d{2})',
+            r"(?P<validity_start>\d{8}T\d{6})",
+            r"(?P<validity_stop>\d{8}T\d{6})",
+            r"(?P<originator>\w{8})",
+            r"(?P<baseline>\d{2})(?P<version>\d{2})",
         ]
-        super().__init__(product_type, filename_base_pattern=r'_'.join(pattern), extension='.EOF', zipped=zipped)
+        super().__init__(product_type, filename_base_pattern=r"_".join(pattern), extension=".EOF", zipped=zipped)
 
     def _set_properties_from_filename(self, file_name_attrs, properties):
         super()._set_properties_from_filename(file_name_attrs, properties)
-
-        properties.biomass.processing_center = file_name_attrs['originator'].rstrip('_')
+        properties.biomass.processing_center = file_name_attrs["originator"].rstrip("_")
 
     def analyze(self, paths, filename_only=False):
         properties = super().analyze(paths, filename_only)
-
         if not filename_only:
             self._analyze_eof_header(self.read_xml_component(paths[0]), properties)
-
         return properties
 
 
 class QualityDisclaimerMetadataFile(BiomassBaseProduct):
     def __init__(self, product_type, zipped=None):
         pattern = [
-            r'^BIO',
-            r'(?P<file_class>\w{4})',
+            r"^BIO",
+            r"(?P<file_class>\w{4})",
             product_type,
-            r'(?P<creation_date>\d{8}T\d{6})',
-            r'(?P<originator>\w{8})',
-            r'(?P<identifier>\d{6})',
+            r"(?P<creation_date>\d{8}T\d{6})",
+            r"(?P<originator>\w{8})",
+            r"(?P<identifier>\d{6})",
         ]
-        super().__init__(product_type, filename_base_pattern=r'_'.join(pattern), extension='.EOF', zipped=zipped)
+        super().__init__(product_type, filename_base_pattern=r"_".join(pattern), extension=".EOF", zipped=zipped)
 
     def analyze(self, paths, filename_only=False):
-        if filename_only:
-            raise NotImplementedError(f'Filename-only parsing is not possible for product type {self.product_type}')
-
         properties = super().analyze(paths, filename_only=filename_only)
-
         if not filename_only:
             self._analyze_eof_header(self.read_xml_component(paths[0]), properties)
-
         return properties
 
     def _set_properties_from_filename(self, file_name_attrs, properties):
-        properties.core.creation_date = datetime.strptime(file_name_attrs['creation_date'], '%Y%m%dT%H%M%S')
-        properties.biomass.processing_center = file_name_attrs['originator'].rstrip('_')
+        properties.core.creation_date = datetime.strptime(file_name_attrs["creation_date"], "%Y%m%dT%H%M%S")
+        properties.biomass.processing_center = file_name_attrs["originator"].rstrip("_")
 
 
 class TransponderReport(BiomassBaseProduct):
     def __init__(self, product_type, zipped=None):
         self.enclose_dir = not zipped
         pattern = [
-            r'^BIO',
-            r'(?P<file_class>\w{4})',
+            r"^BIO",
+            r"(?P<file_class>\w{4})",
             product_type,
-            r'(?P<validity_start>\d{8}T\d{6})',
-            r'(?P<validity_stop>\d{8}T\d{6})',
-            r'(?P<version>\d{4})',
+            r"(?P<validity_start>\d{8}T\d{6})",
+            r"(?P<validity_stop>\d{8}T\d{6})",
+            r"(?P<version>\d{4})",
         ]
-        super().__init__(product_type, filename_base_pattern=r'_'.join(pattern), zipped=zipped)
+        super().__init__(product_type, filename_base_pattern=r"_".join(pattern), zipped=zipped)
         self.is_multi_file_product = True
 
     @property
@@ -750,9 +726,9 @@ class TransponderReport(BiomassBaseProduct):
     def analyze(self, paths, filename_only=False):
         if len(paths) > 1:
             # make sure we pass the header file as first entry for analyze()
-            header_files = [path for path in paths if path.endswith('.HDR')]
+            header_files = [path for path in paths if path.endswith(".HDR")]
             if len(header_files) == 0:
-                raise muninnError('product does not contain a .HDR file')
+                raise muninnError("product does not contain a .HDR file")
             header_file = header_files[0]
             paths.remove(header_file)
             paths.insert(0, header_file)
@@ -762,7 +738,7 @@ class TransponderReport(BiomassBaseProduct):
         if not filename_only:
             # Use header file to extract info
             if len(paths) == 1 and self.is_zipped(paths[0]):
-                component_path = os.path.splitext(os.path.basename(paths[0]))[0] + '.HDR'
+                component_path = os.path.splitext(os.path.basename(paths[0]))[0] + ".HDR"
             else:
                 component_path = None
             self._analyze_eof_header(self.read_xml_component(paths[0], component_path), properties)
@@ -779,15 +755,15 @@ class EOFFile(BiomassBaseProduct):
     def __init__(self, product_type, filename_base_pattern=None, zipped=None):
         if filename_base_pattern is None:
             pattern = [
-                r'^BIO',
-                r'(?P<file_class>\w{4})',
+                r"^BIO",
+                r"(?P<file_class>\w{4})",
                 product_type,
-                r'(?P<validity_start>\d{8}T\d{6})',
-                r'(?P<validity_stop>\d{8}T\d{6})',
-                r'(?P<version>\d{4})',
+                r"(?P<validity_start>\d{8}T\d{6})",
+                r"(?P<validity_stop>\d{8}T\d{6})",
+                r"(?P<version>\d{4})",
             ]
-            filename_base_pattern = r'_'.join(pattern)
-        super().__init__(product_type, filename_base_pattern=filename_base_pattern, extension='.EOF', zipped=zipped)
+            filename_base_pattern = r"_".join(pattern)
+        super().__init__(product_type, filename_base_pattern=filename_base_pattern, extension=".EOF", zipped=zipped)
 
     def analyze(self, paths, filename_only=False):
         properties = super().analyze(paths, filename_only)
@@ -810,52 +786,52 @@ class EOFFileWithBaseline(EOFFile):
     """Only difference with EOFFile is that baseline is a component of the version (which is always 0)"""
     def __init__(self, product_type, zipped=None):
         pattern = [
-            r'^BIO',
-            r'(?P<file_class>\w{4})',
+            r"^BIO",
+            r"(?P<file_class>\w{4})",
             product_type,
-            r'(?P<validity_start>\d{8}T\d{6})',
-            r'(?P<validity_stop>\d{8}T\d{6})',
-            r'(?P<baseline>00)(?P<version>\d{2})',
+            r"(?P<validity_start>\d{8}T\d{6})",
+            r"(?P<validity_stop>\d{8}T\d{6})",
+            r"(?P<baseline>00)(?P<version>\d{2})",
         ]
-        super().__init__(product_type, filename_base_pattern=r'_'.join(pattern), zipped=zipped)
+        super().__init__(product_type, filename_base_pattern=r"_".join(pattern), zipped=zipped)
 
 
 class EOFFileWithAcquisition(EOFFile):
     """Difference with EOFFileWithBaseline is the addition of acquisition_station"""
     def __init__(self, product_type, zipped=None):
         pattern = [
-            r'^BIO',
-            r'(?P<file_class>\w{4})',
+            r"^BIO",
+            r"(?P<file_class>\w{4})",
             product_type,
-            r'(?P<validity_start>\d{8}T\d{6})',
-            r'(?P<validity_stop>\d{8}T\d{6})',
-            r'(?P<acquisition_station>\w{8})',
-            r'(?P<baseline>00)(?P<version>\d{2})',
+            r"(?P<validity_start>\d{8}T\d{6})",
+            r"(?P<validity_stop>\d{8}T\d{6})",
+            r"(?P<acquisition_station>\w{8})",
+            r"(?P<baseline>00)(?P<version>\d{2})",
         ]
-        super().__init__(product_type, filename_base_pattern=r'_'.join(pattern), zipped=zipped)
+        super().__init__(product_type, filename_base_pattern=r"_".join(pattern), zipped=zipped)
 
     def _set_properties_from_filename(self, file_name_attrs, properties):
         super()._set_properties_from_filename(file_name_attrs, properties)
-        properties.biomass.acquisition_station = file_name_attrs['acquisition_station']
+        properties.biomass.acquisition_station = file_name_attrs["acquisition_station"]
 
 
 class EOFFileWithPhase(EOFFile):
     """Difference with EOFFile is the addition of mission_phase"""
     def __init__(self, product_type, zipped=None):
         pattern = [
-            r'^BIO',
-            r'(?P<file_class>\w{4})',
+            r"^BIO",
+            r"(?P<file_class>\w{4})",
             product_type,
-            r'(?P<validity_start>\d{8}T\d{6})',
-            r'(?P<validity_stop>\d{8}T\d{6})',
-            r'(?P<mission_phase>\w{8})',
-            r'(?P<version>\d{4})',
+            r"(?P<validity_start>\d{8}T\d{6})",
+            r"(?P<validity_stop>\d{8}T\d{6})",
+            r"(?P<mission_phase>\w{8})",
+            r"(?P<version>\d{4})",
         ]
-        super().__init__(product_type, filename_base_pattern=r'_'.join(pattern), zipped=zipped)
+        super().__init__(product_type, filename_base_pattern=r"_".join(pattern), zipped=zipped)
 
     def _set_properties_from_filename(self, file_name_attrs, properties):
         super()._set_properties_from_filename(file_name_attrs, properties)
-        properties.biomass.mission_phase = file_name_attrs['mission_phase'][0]
+        properties.biomass.mission_phase = file_name_attrs["mission_phase"][0]
 
 
 _product_types = dict(
