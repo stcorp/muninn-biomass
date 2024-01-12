@@ -1,7 +1,7 @@
 import os
 import re
 import zipfile
-from datetime import datetime, timezone
+from datetime import datetime
 import xml.etree.ElementTree as ET
 from typing import Optional, Callable
 
@@ -322,12 +322,11 @@ class BiomassBaseProduct(object):
                     else:
                         # print(f"Passed ValueError for {property_name}: {e}")
                         pass
-                except IndexError as e:
+                except IndexError:
                     if mandatory:
                         raise muninnError(f"Impossible to extract mandatory metadata: {property_name} "
                                           f"(Incorrect value: {property_value})")
                     else:
-                        # print(f"Passed IndexError for {property_name}: {e}")
                         pass
 
             elif mandatory:
@@ -446,7 +445,7 @@ class BiomassBaseProduct(object):
         self._set_property(biomass, property_name, root, pathDownlinkInfo+"eop:acquisitionDate", ns,
                            lambda x: datetime.strptime(x, '%Y-%m-%dT%H:%M:%SZ'), mandatory[property_name])
 
-        # Also extracts validity_start and validity_stop is not already extracted from the filename
+        # Also extracts validity_start and validity_stop if not already extracted from the filename
         pathValidityPeriod = "./om:validTime/gml:TimePeriod/"
         self._set_property(core, "validity_start", root, pathValidityPeriod+"gml:beginPosition", ns,
                            lambda x: datetime.strptime(x[:-5], '%Y-%m-%dT%H:%M:%S'), True)
@@ -459,7 +458,6 @@ class BiomassBaseProduct(object):
         biomass = properties.biomass
 
         # Differentiate between Earth_Observation_Header and Earth_Explorer_Header
-        # TODO: Update ns once the namespace of the Quality Disclaimer Metadata file is defined
         if "Earth_Explorer_File" in root.tag:
             start_node_path = "./Earth_Explorer_Header/"
             # The default namespace changes between some files, so it is extracted manually
@@ -622,7 +620,6 @@ class AuxiliaryDataFile(BiomassBaseProduct):
         super()._set_properties_from_filename(file_name_attrs, properties)
 
         biomass = properties.biomass
-        core = properties.core
 
         biomass.type = self.product_type.split("_")[1]
         biomass.baseline = int(file_name_attrs['baseline'])
