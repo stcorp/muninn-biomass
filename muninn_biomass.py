@@ -320,7 +320,6 @@ class BiomassBaseProduct(object):
                         raise muninnError(f"Impossible to extract mandatory metadata: {property_name} "
                                           f"(ValueError: {e})")
                     else:
-                        # print(f"Passed ValueError for {property_name}: {e}")
                         pass
                 except IndexError:
                     if mandatory:
@@ -692,7 +691,6 @@ class Report(BiomassBaseProduct):
 
 
 class QualityDisclaimerMetadataFile(BiomassBaseProduct):
-    # TODO: May need to be updated once the Quality Disclaimer Metadata file format is finalized
     def __init__(self, product_type, zipped=None):
         pattern = [
             r'^BIO',
