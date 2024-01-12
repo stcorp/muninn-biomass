@@ -452,7 +452,7 @@ class BiomassBaseProduct(object):
                            lambda x: datetime.max if x[:-5] == '9999-99-99T99:99:99' else
                            datetime.strptime(x[:-5], '%Y-%m-%dT%H:%M:%S'), True)
 
-    def _analyze_header(self, root, properties):
+    def _analyze_eof_header(self, root, properties):
         core = properties.core
         biomass = properties.biomass
 
@@ -654,7 +654,7 @@ class BaselineConfigurationFile(BiomassBaseProduct):
         properties = super().analyze(paths, filename_only=filename_only)
 
         if not filename_only:
-            self._analyze_header(self.read_xml_component(paths[0]), properties)
+            self._analyze_eof_header(self.read_xml_component(paths[0]), properties)
 
         return properties
 
@@ -685,7 +685,7 @@ class Report(BiomassBaseProduct):
         properties = super().analyze(paths, filename_only)
 
         if not filename_only:
-            self._analyze_header(self.read_xml_component(paths[0]), properties)
+            self._analyze_eof_header(self.read_xml_component(paths[0]), properties)
 
         return properties
 
@@ -709,7 +709,7 @@ class QualityDisclaimerMetadataFile(BiomassBaseProduct):
         properties = super().analyze(paths, filename_only=filename_only)
 
         if not filename_only:
-            self._analyze_header(self.read_xml_component(paths[0]), properties)
+            self._analyze_eof_header(self.read_xml_component(paths[0]), properties)
 
         return properties
 
@@ -765,7 +765,7 @@ class TransponderReport(BiomassBaseProduct):
                 component_path = os.path.splitext(os.path.basename(paths[0]))[0] + '.HDR'
             else:
                 component_path = None
-            self._analyze_header(self.read_xml_component(paths[0], component_path), properties)
+            self._analyze_eof_header(self.read_xml_component(paths[0], component_path), properties)
 
         return properties
 
@@ -794,7 +794,7 @@ class EOFFile(BiomassBaseProduct):
 
         if not filename_only:
             # Use content of Fixed_Header
-            self._analyze_header(self.read_xml_component(paths[0]), properties)
+            self._analyze_eof_header(self.read_xml_component(paths[0]), properties)
 
         return properties
 
