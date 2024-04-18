@@ -33,7 +33,7 @@ class BIOMASSNamespace(Mapping):
     type = Text(index=True, optional=True)  # RAW, SCS, DGM, STA, GN, FD, FH, AGB, ORB, ATT, INS, PP0, PP1, PP2, PP3,
                                             # PPS, TEC, GMF, TRP
     processing_level = Text(index=True, optional=True)  # RAW, AUX, L0, L1A, L1B, L1C, L2A, L2B, L3
-    datatake_id = Text(index=True, optional=True)  # Space-separated list RAWS products
+    datatake_id = Text(index=True, optional=True)  # decimal number - can be space-separated list for RAWS products
     instrument_conf_id = Integer(index=True, optional=True)
     processing_center = Text(index=True, optional=True)
     processor_name = Text(index=True, optional=True)
