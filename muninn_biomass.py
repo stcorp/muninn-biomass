@@ -106,6 +106,7 @@ ADF_PRODUCT_TYPES = [
     "AUX_PP2_FD",
     "AUX_PP2_AB",
     "AUX_PP3___",
+    "AUX_ERP___",
     "AUX_TEC___",
     "AUX_GMF___",
 ]
