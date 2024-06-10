@@ -186,6 +186,13 @@ def parse_boolean(val):
     return res
 
 
+class CommentedTreeBuilder(ET.TreeBuilder):
+    def comment(self, data):
+        self.start(ET.Comment, {})
+        self.data(data)
+        self.end(ET.Comment)
+
+
 class BiomassBaseProduct(object):
     # filename_base_pattern is the pattern for the filename excluding any extension (and without trailing $)
     # extension can be "" (for a directory), None (for multifile products), or set to a specific extension (e.g. ".EOF")
@@ -266,6 +273,9 @@ class BiomassBaseProduct(object):
         # filepath: Path given as input to the analyze() function
         # component_path: Path of the specific component to be read.
 
+        # We use a parser that preserves comments (to allow derived modules to read the AUX CHANGES information)
+        parser = ET.XMLParser(target=CommentedTreeBuilder())
+
         # Open XML file (zipped or not) and return root element
         if self.is_zipped(filepath):
             if component_path is None:
@@ -277,12 +287,12 @@ class BiomassBaseProduct(object):
                     component_path = os.path.join(os.path.splitext(os.path.basename(filepath))[0], component_path)
             with zipfile.ZipFile(filepath) as zproduct:
                 with zproduct.open(component_path) as file:
-                    return ET.parse(file).getroot()
+                    return ET.parse(file, parser).getroot()
         else:
             if component_path is not None:
                 filepath = os.path.join(filepath, component_path)
             with open(filepath) as file:
-                return ET.parse(file).getroot()
+                return ET.parse(file, parser).getroot()
 
     @staticmethod
     def _set_property(properties: Struct, property_name: str, root: ET.Element, path: str, ns: dict, parse: Callable,
