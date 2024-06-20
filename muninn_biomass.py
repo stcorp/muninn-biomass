@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 from typing import Optional, Callable
 
 from muninn.geometry import Point, LinearRing, Polygon, MultiPolygon
-from muninn.schema import Mapping, Text, Integer, Boolean, Timestamp
+from muninn.schema import Mapping, Text, Integer, Real, Boolean, Timestamp
 from muninn.util import copy_path
 from muninn import Struct
 from muninn import Error as muninnError
@@ -40,6 +40,8 @@ class BIOMASSNamespace(Mapping):
     processor_version = Text(index=True, optional=True)
     acquisition_station = Text(index=True, optional=True)
     acquisition_date = Timestamp(index=True, optional=True)
+    center_latitude = Real(index=True, optional=True)  # latitude of footprint center point
+    center_longitude = Real(index=True, optional=True)  # longitude of footprint center point
 
 
 def namespaces():
@@ -469,6 +471,10 @@ class BiomassBaseProduct(object):
                 core.footprint = geometries[0]
             elif len(geometries) > 1:
                 core.footprint = MultiPolygon(geometries)
+
+            center_coord = footprint.find("./eop:centerOf/gml:Point/gml:pos", namespaces=ns).text.split(" ")
+            biomass.center_latitude = float(center_coord[0])
+            biomass.center_longitude = float(center_coord[1])
 
     def _analyze_eof_header(self, root, properties):
         core = properties.core
