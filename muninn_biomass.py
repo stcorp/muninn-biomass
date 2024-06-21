@@ -483,27 +483,20 @@ class BiomassBaseProduct(object):
         # Differentiate between Earth_Observation_Header and Earth_Explorer_Header
         if "Earth_Explorer_File" in root.tag:
             start_node_path = "./Earth_Explorer_Header/"
-            # The default namespace changes between some files, so it is extracted manually
-            ns = {
-                "xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                "": root.tag.split("}")[0].split("{")[1] if ("{" in root.tag and "}" in root.tag) else ""
-            }
+            ns = {"xsi": "http://www.w3.org/2001/XMLSchema-instance"}
         elif "Earth_Observation_File" in root.tag:
             start_node_path = "./Earth_Observation_Header/"
-            ns = {
-                "xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                "": root.tag.split("}")[0].split("{")[1]  # Same method as above for consistency's sake
-            }
+            ns = {"xsi": "http://www.w3.org/2001/XMLSchema-instance"}
         else:
             # Case of a HDR file which starts directly by a "Earth_Observation_Header" element
             start_node_path = "./"
-            ns = {
-                "xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                "": root.tag.split("}")[0].split("{")[1]  # Same method as above for consistency's sake
-            }
+            ns = {"xsi": "http://www.w3.org/2001/XMLSchema-instance"}
+        if ("{" in root.tag and "}" in root.tag):
+            # The default namespace changes between some files, so it is extracted manually
+            ns[""] = root.tag.split("}")[0].split("{")[1]
 
         # Extract appropriate metadata
-        pathSource = start_node_path+"Fixed_Header/Source/"
+        pathSource = start_node_path + "Fixed_Header/Source/"
         self._set_property(biomass, "processing_center", root, pathSource + "System", ns, str, True)
         self._set_property(biomass, "processor_name", root, pathSource + "Creator", ns, str, True)
         self._set_property(biomass, "processor_version", root, pathSource + "Creator_Version", ns, str, True)
