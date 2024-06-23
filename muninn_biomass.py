@@ -709,6 +709,10 @@ class QualityDisclaimerMetadataFile(BiomassBaseProduct):
         ]
         super().__init__(product_type, filename_base_pattern=r"_".join(pattern), extension=".EOF", zipped=zipped)
 
+    def archive_path(self, attributes):
+        name_attrs = self.parse_filename(attributes.core.physical_name)
+        return os.path.join("REP_DISCLM", name_attrs["identifier"])
+
     def analyze(self, paths, filename_only=False):
         properties = super().analyze(paths, filename_only=filename_only)
         if not filename_only:
