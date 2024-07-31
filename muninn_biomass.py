@@ -24,7 +24,7 @@ class BIOMASSNamespace(Mapping):
     slice_number = Integer(index=True, optional=True)  # only applicable for L0
     tile = Text(index=True, optional=True)  # [N|S]aa[E|W]bbb, only applicable for L2/L3, space-separated list for L2A
     basin = Text(index=True, optional=True)  # Basin identifier, only applicable for L2/L3, space-separated list for L2A
-    baseline = Integer(index=True, optional=True)  # seperate sequence for each L0/L1/L2 x COM/TOM/INT combination
+    baseline = Integer(index=True, optional=True)  # separate sequence for each L0/L1/L2 x COM/TOM/INT combination
     compact_creation_date = Text(index=True, optional=True)  # base 36 ([0-9A-Z]) of [s] since 2000-01-01T00:00:00
     orbit_number = Integer(index=True, optional=True)
     orbit_drift_flag = Boolean(index=True, optional=True)  # drift (datatake inside Spacecraft Repositioning Manoeuvre)
