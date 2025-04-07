@@ -111,6 +111,7 @@ ADF_PRODUCT_TYPES = [
     "AUX_ERP___",
     "AUX_TEC___",
     "AUX_GMF___",
+    "PARC_INFO_",
 ]
 BASELINE_CFG_PRODUCT_TYPES = [
     "CFG_PF_BC_",
