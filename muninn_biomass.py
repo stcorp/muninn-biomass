@@ -553,8 +553,10 @@ class FrameBasedDataProduct(BiomassBaseProduct):
             biomass.swath = swath
         biomass.type = self.product_type.split("_")[1]
         biomass.mission_phase = file_name_attrs["mission_phase"]
-        biomass.global_coverage = int(file_name_attrs["global_coverage"])
-        biomass.major_cycle = int(file_name_attrs["major_cycle"])
+        if file_name_attrs["global_coverage"] != "__":
+            biomass.global_coverage = int(file_name_attrs["global_coverage"])
+        if file_name_attrs["major_cycle"] != "__":
+            biomass.major_cycle = int(file_name_attrs["major_cycle"])
         if "repeat_cycle" in file_name_attrs and file_name_attrs["repeat_cycle"] != "__":
             if file_name_attrs["repeat_cycle"] == "DR":
                 biomass.repeat_cycle = 0
