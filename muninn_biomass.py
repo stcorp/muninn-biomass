@@ -399,8 +399,8 @@ class BiomassBaseProduct(object):
         self._set_property(biomass, property_name, root, pathAcquisition + "bio:instrumentConfID", ns, int,
                            mandatory[property_name])
         property_name = "track_number"
-        self._set_property(biomass, property_name, root, pathAcquisition + "eop:wrsLongitudeGrid", ns, int,
-                           mandatory[property_name])
+        self._set_property(biomass, property_name, root, pathAcquisition + "eop:wrsLongitudeGrid", ns,
+                           lambda x: None if x == "NA" else int(x), mandatory[property_name])  # NA is ignored
         if self.product_type in L0_PRODUCT_TYPES:
             # For L0 product, this contains the slice number
             property_name = "slice_number"
