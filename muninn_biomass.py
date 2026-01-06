@@ -750,8 +750,6 @@ class TransponderReport(BiomassBaseProduct):
 
     def identify(self, paths):
         for path in paths:
-            if os.path.isdir(path):
-                return False
             if re.match(self.filename_pattern, os.path.basename(path)) is None:
                 return False
         return True
